@@ -11,6 +11,7 @@ import {
   View,
 } from 'react-native';
 import { Wallet } from './components/Wallet';
+import { Cards } from './components/Cards';
 
 function App(): JSX.Element {
 
@@ -18,6 +19,7 @@ function App(): JSX.Element {
     <SafeAreaView style={{}}>
       <Header />
       <Wallet />
+      <Cards />
     </SafeAreaView>
   );
 }
