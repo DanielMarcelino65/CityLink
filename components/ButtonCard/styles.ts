@@ -3,8 +3,8 @@ import { Button, ButtonText } from '../../components/Button/styles';
 import { ButtonProps } from './types';
 
 export const ButtonCardContainer = styled(Button)<ButtonProps>`
-    width: 120px;
-    height: 140px;
+    width: 100%;
+    height: 100%;
     background-color: ${({color})=> color ? color : '#fff'};
     flex-direction: column;
     justify-content: space-between;
