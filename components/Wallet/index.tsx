@@ -19,7 +19,7 @@ export function Wallet(): JSX.Element {
                         <S.BalanceValue>R$ 1.000,00</S.BalanceValue>
                     </S.BalanceTextContainer>
                     <S.ButtonContainer>
-                        <LinearGradient style={{borderRadius: 35}} colors={['#01B8A8', '#22D897']}><Button fontSize={14} textColor='#fff'>RESGATAR</Button></LinearGradient>
+                        <LinearGradient style={{borderRadius: 35, elevation: 5}} colors={['#01B8A8', '#22D897']}><Button fontSize={14} textColor='#fff'>RESGATAR</Button></LinearGradient>
                     </S.ButtonContainer>
                 </S.BalanceContainer>
               </S.WalletContainer>

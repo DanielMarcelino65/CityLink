@@ -46,7 +46,7 @@ export const BalanceText = styled.Text`
 `;
 
 export const BalanceValue = styled.Text`
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: #000;
     margin-top: 1px;
@@ -55,8 +55,8 @@ export const BalanceValue = styled.Text`
 
 export const Container = styled.View`
     width: 100%;
-    height: 200px;
-    background-color: #D9D9D9;
+    height: 180px;
+    background-color: #e8e8e8;
     align-items: center;
     justify-content: center;
 `;
@@ -67,6 +67,7 @@ export const WalletContainer = styled.View`
     background-color: #fff;
     border-radius: 30px;
     justify-content: space-between;
+    elevation: 5;
 `;
 
 export const ButtonContainer = styled.View`

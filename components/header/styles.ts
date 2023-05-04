@@ -9,7 +9,7 @@ export const image = styled.Image`
 export const Container = styled.View`
     display: flex;
     width: 100%;
-    height: 200px;
+    height: 170px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -52,7 +52,7 @@ export const MenuContainer = styled.TouchableOpacity`
     align-items: center;
     top: 25px;
     left: 15px;
-    width: 45px;
+    width: 35px;
     height: 40px;
 `;
 
