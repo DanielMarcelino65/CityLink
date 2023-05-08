@@ -8,13 +8,16 @@ import { Cards } from '../../Cards';
 import { ImageComponent } from '../../ImageComponent';
 import { Footer } from '../../Footer';
 import { Header } from '../../header';
-import SideMenu from '../../Drawer';
 
-export default function Home() {
+export function RealHome() {
     return (
     <SafeAreaView style={{flex: 1}}>
       <StatusBar animated={true} backgroundColor={'#01B8A8'} />
-      <SideMenu />
+        <Header />
+        <ImageComponent />
+        <Wallet />
+        <Cards />
+        <Footer />
     </SafeAreaView>
     );
 }

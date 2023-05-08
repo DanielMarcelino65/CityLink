@@ -15,7 +15,7 @@ export function Header(): JSX.Element {
     return (
         <LinearGradient colors={['#01B8A8', '#22D897']}>
             <S.Container>
-                <S.MenuContainer>
+                <S.MenuContainer onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}>
                     <S.Menu />
                     <S.Menu />
                     <S.Menu />
