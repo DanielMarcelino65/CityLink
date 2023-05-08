@@ -36,6 +36,7 @@ export const LoginContainer = styled.View`
     border-radius: 20px;
     background-color: white;
     padding-top: 50px;
+    elevation: 5;
 `;
 export const ImageWrapper = styled.View`
     width: 80%;
