@@ -7,4 +7,5 @@ export interface ButtonProps {
     fontSize?: number;
     textColor?: string;
     fontWeight?: string;
+    style?: object;
 }

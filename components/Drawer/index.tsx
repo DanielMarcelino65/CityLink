@@ -3,7 +3,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 import Home from '../Screens/Home';
 import LoginScreen from '../Screens/LoginScreen';
-import { RegisterScreen } from '../Screens/RegisterScreen';
+import RegisterScreen from '../Screens/RegisterScreen';
 import { RealHome } from '../Screens/RealHome';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Icon } from '../Icon';

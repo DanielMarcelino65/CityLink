@@ -13,6 +13,7 @@ export const HeaderTitle = styled.Text`
     font-size: 30px;
     font-weight: bold;
     color: white;
+    padding-bottom: 50px;
 `;
 
 export const LinearGradientStyled = styled(LinearGradient)`
@@ -20,15 +21,15 @@ export const LinearGradientStyled = styled(LinearGradient)`
     height: 160px;
     position: absolute;
     top: 0;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
 `;
 
 export const LoginContainer = styled.View`
     display: flex;
     position: absolute;
     flex-direction: column;
-    top: 130px;
+    top: 115px;
     width: 90%;
     height: 450px;
     justify-content: flex-start;

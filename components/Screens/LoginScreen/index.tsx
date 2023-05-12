@@ -11,6 +11,10 @@ export default function LoginScreen() {
     function handleNavigateToHome() {
         navigation.navigate('Home' as never);
     }
+
+    function handleNavigateToRegister(){
+        navigation.navigate('RegisterScreen' as never);
+    }
     return (
         <SafeAreaView style={{flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#e8e8e8'}}>
             <StatusBar animated={true} backgroundColor={'#01B8A8'} />
@@ -25,7 +29,7 @@ export default function LoginScreen() {
                 </S.ImageWrapper>
                 <S.InputWrapper>
                     <Text style={{color: '#01B8A8'}}>Nome</Text>
-                    <Input  />
+                    <Input />
                     <View style={{height: 1, backgroundColor: '#01B8A8'}} />
                     <Text style={{color: '#01B8A8', marginTop: 20}}>Senha</Text>
                     <Input placeholder="*******" isPasswowrd={true} />
@@ -34,7 +38,7 @@ export default function LoginScreen() {
                         <LinearGradient style={{borderRadius: 20, width: '80%', height: 40}} colors={['#01B8A8', '#22D897']}>
                             <Button onPress={handleNavigateToHome} fontSize={14} fontWeight="bold" textColor="white">Entrar</Button>
                         </LinearGradient>
-                        <Button textColor="#01B8A8" fontSize={10}> Não tem uma conta? Registre-se</Button>
+                        <Button onPress={handleNavigateToRegister} textColor="#01B8A8" fontSize={10}> Não tem uma conta? Registre-se</Button>
                     </View>
                 </S.InputWrapper>
             </S.LoginContainer>
