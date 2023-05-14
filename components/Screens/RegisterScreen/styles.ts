@@ -49,12 +49,11 @@ export const RegisterContainer = styled.View`
     display: flex;
     position: absolute;
     flex-direction: column;
-    top: 115px;
     width: 90%;
     height: 650px;
     justify-content: flex-start;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: white;
     padding-top: 25px;
     elevation: 5;

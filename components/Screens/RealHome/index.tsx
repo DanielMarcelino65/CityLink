@@ -11,7 +11,7 @@ import { Header } from '../../header';
 
 export function RealHome() {
     return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: '#e8e8e8'}}>
       <StatusBar animated={true} backgroundColor={'#01B8A8'} />
         <Header />
         <ImageComponent />

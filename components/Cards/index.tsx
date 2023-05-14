@@ -7,7 +7,7 @@ export function Cards() {
             <S.CardsContainer>
                 <S.Card>
                     <ButtonCard hasIcon={true} iconWrapperSize={50} elevation={5} iconWrapperColor="#D9D9D9" iconName="trash-2" iconSize={22} iconColor="black" iconType="Feather" color="white" textColor="#000000" fontSize={16} fontWeight="bold">
-                        Lixeira IOT
+                        Lixeira IoT
                     </ButtonCard>
                 </S.Card>
                 <S.Card>
