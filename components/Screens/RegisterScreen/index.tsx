@@ -24,7 +24,7 @@ export default function RegisterScreen (): JSX.Element {
                         </S.ImageContainer>
                 </S.HeaderContainer>
             </S.LinearGradientStyled>
-            <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={{flex: 1, alignItems: 'center', justifyContent: 'center', marginTop: 40}}> 
+            <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={{flex: 1, alignItems: 'center', justifyContent: 'center', marginTop: 90}}> 
             <S.RegisterContainer>
                     <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#01B8A8'}}>Registrar</Text>
                     <S.InputWrapper>

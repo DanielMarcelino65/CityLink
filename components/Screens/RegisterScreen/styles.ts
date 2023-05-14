@@ -50,7 +50,7 @@ export const RegisterContainer = styled.View`
     position: absolute;
     flex-direction: column;
     width: 90%;
-    height: 650px;
+    height: 625px;
     justify-content: flex-start;
     align-items: center;
     border-radius: 25px;
