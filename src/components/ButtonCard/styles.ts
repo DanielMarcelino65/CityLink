@@ -8,7 +8,7 @@ export const ButtonCardContainer = styled(Button)<ButtonPropsCard>`
     background-color: ${({color})=> color ? color : '#fff'};
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 0;
+    border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     elevation: ${({elevation})=> elevation ? elevation : 0};

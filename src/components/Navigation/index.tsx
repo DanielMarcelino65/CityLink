@@ -1,14 +1,10 @@
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import Home from '../Screens/Home';
 import LoginScreen from '../Screens/LoginScreen';
-import SideMenu from '../Drawer';
-import LinearGradient from 'react-native-linear-gradient';
 import RegisterScreen from '../Screens/RegisterScreen';
 
-const Tab = createMaterialBottomTabNavigator();
+
 const Stack = createStackNavigator();
 
 
@@ -22,10 +18,6 @@ export function MyTabs() {
         <Stack.Screen
           name="LoginScreen"
           component={LoginScreen}
-        />
-        <Stack.Screen
-          name="Home"
-          component={Home}
         />
         <Stack.Screen
           name="RegisterScreen"

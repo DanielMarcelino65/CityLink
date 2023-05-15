@@ -10,7 +10,7 @@ export function Wallet(): JSX.Element {
        <S.Container style={styles.shadowProps}>
               <S.WalletContainer>
                 <S.TitleContainer>
-                    <S.TitleImage source={require('../../assets/images/digitalwallet.png')} />
+                    <S.TitleImage source={require('../../../assets/images/digitalwallet.png')} />
                     <S.TitleText>Digital Wallet</S.TitleText>
                 </S.TitleContainer>
                 <S.BalanceContainer>

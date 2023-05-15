@@ -19,4 +19,5 @@ export const Card = styled.View`
     width: 130px;
     height: 100px;
     padding: 0 10px;
+    box-sizing: border-box;
 `;
