@@ -5,7 +5,7 @@ import { UserStack } from './userStack';
 
 
 export default function RootNavigation() {
-    const [isUserLogged, setIsUserLogged] = React.useState(false);
+    const [isUserLogged, setIsUserLogged] = React.useState(true);
     const { user } = useAuth();
 
     return user ? <UserStack /> : <AuthStack />;

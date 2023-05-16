@@ -2,9 +2,11 @@ import * as S from './styles';
 import LinearGradient from 'react-native-linear-gradient';
 import { useNavigation } from '@react-navigation/native';
 import { DrawerActions } from '@react-navigation/native';
+import { auth } from '../../config/firebase.config';
 
 
 export function Header(): JSX.Element {
+    const user = auth.currentUser;
 
     const navigation = useNavigation();
 
@@ -20,7 +22,7 @@ export function Header(): JSX.Element {
                     <S.image source={require('../../../assets/images/logo2.png')} />
                 </S.ImageContainer>
                 <S.ProfileContainer>
-                    <S.ProfileText>Olá, John Doe</S.ProfileText>
+                    <S.ProfileText>Olá, {user?.displayName}</S.ProfileText>
                     <S.ProfileImage source={require('../../../assets/images/iconprofile.png')} />
                 </S.ProfileContainer>
             </S.Container>

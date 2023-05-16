@@ -6,8 +6,9 @@ import { Icon } from '../../Icon';
 import { Input } from '../../Input';
 import LinearGradient from 'react-native-linear-gradient';
 import { useNavigation } from '@react-navigation/native';
-import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../../config/firebase.config';
+import { updateProfile } from 'firebase/auth';
 
 
 export default function RegisterScreen (): JSX.Element {
@@ -15,12 +16,17 @@ export default function RegisterScreen (): JSX.Element {
 
     const [email, setEmail] = React.useState('');
     const [password, setPassword] = React.useState('');
+    const [name, setName] = React.useState('');
 
     const handleSubmit = async () => {
-        const response = await createUserWithEmailAndPassword(auth, email, password);
+        const response = await createUserWithEmailAndPassword(auth, email, password).then((userCredential) => {
+            const user = userCredential.user;
+            updateProfile(user, {
+                displayName: name,
+            });
         console.log(response);
-      };
-
+      });
+    };
 
     return (
         <>
@@ -40,7 +46,7 @@ export default function RegisterScreen (): JSX.Element {
                     <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#01B8A8'}}>Registrar</Text>
                     <S.InputWrapper>
                         <Text style={{color: '#01B8A8'}}>Nome</Text>
-                        <Input />
+                        <Input onChangeText={setName} />
                         <View style={{height: 1, backgroundColor: '#01B8A8'}} />
                         <Text style={{color: '#01B8A8', marginTop: 20}}>CPF</Text>
                         <Input type='number-pad' placeholder="000.000.000-00" />
@@ -66,3 +72,4 @@ export default function RegisterScreen (): JSX.Element {
         </>
     );
 }
+
